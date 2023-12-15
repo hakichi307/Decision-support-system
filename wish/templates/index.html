@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <title>Điều chỉnh nguyện vọng</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Hệ hỗ trợ quyết định giúp tư vấn lựa chọn nguyện vọng</h2>
+    <form id="registrationForm">
+      <label for="region">Địa Chỉ:</label>
+      <select id="region" name="region" required>
+        <option value="mienbac">Miền Bắc</option>
+        <option value="mientrung">Miền Trung</option>
+        <option value="miennam">Miền Nam</option>
+      </select>
+
+      <label for="examScore">Điểm Thi Đại Học:</label>
+      <input type="number" id="examScore" name="examScore" required>
+
+      <label for="major">Ngành Nguyện Vọng:</label>
+      <select id="major" name="major" required>
+        <option value="khoakythuat">Khoa Kỹ Thuật</option>
+        <option value="khoakinhdobusiness">Khoa Kinh Doanh</option>
+        <option value="khoanghethuat">Khoa Nghệ Thuật</option>
+        <option value="khoayhoc">Khoa Y Học</option>
+        <option value="khoakhxh">Khoa Khoa Học Xã Hội</option>
+        <option value="khoakhcn">Khoa Khoa Học Tự Nhiên</option>
+        <option value="khoaluat">Khoa Luật</option>
+        <option value="khoacntt">Khoa Công Nghệ</option>
+      </select>
+
+      <label for="tuition">Mức Học Phí Phù Hợp:</label>
+      <input type="number" id="tuition" name="tuition" required>
+
+      <button type="button" onclick="submitForm()">Đồng ý</button>
+    </form>
+  </div>
+</body>
+</html>

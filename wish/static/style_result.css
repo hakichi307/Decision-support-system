@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Đặt chiều rộng là 70% của kích thước gốc */
+    margin-top: 20px; /* Thêm khoảng cách giữa container và nút "Quay Lại" */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #resultTable th, #resultTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #resultTable th {
+    background-color: #2aade1;
+    color: white;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #2791d3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%; /* Đặt chiều rộng là 100% của phần tử cha */
+    margin-top: 50px; /* Thêm khoảng cách giữa nút "Quay Lại" và bảng kết quả */
+    margin-left: 40%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

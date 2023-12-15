@@ -1,0 +1,57 @@
+﻿Tên trường,Chuyên ngành,Học phí,Đánh giá,Địa điểm,Điểm dự kiến,Điểm chuẩn năm trước,Chỉ tiêu
+Đại học ABC,Khoa Kỹ thuật,20000000,1,Miền bắc,28,27.5,200
+Đại học XYZ,Khoa Kinh doanh,25000000,1,Miền bắc,29.5,28,150
+Đại học LMN,Khoa Nghệ thuật,18000000,0.5,Miền nam,26,25.5,180
+Đại học PQR,Khoa Y học,30000000,1,Miền bắc,27.5,27,120
+Đại học UVW,Khoa Khoa học Xã hội,22000000,0.5,Miền nam,25.5,25,160
+Đại học HIJ,Khoa Khoa học Tự nhiên,26000000,1,Miền bắc,28.8,28.2,140
+Đại học OPQ,Khoa Luật,28000000,1,Miền bắc,27.2,26.8,100
+Đại học RST,Khoa Y học,32000000,1,Miền bắc,29.2,28.5,130
+Đại học KLM,Khoa Kỹ thuật,19000000,1,Miền bắc,27,26.5,180
+Đại học UVW,Khoa Kinh doanh,24000000,0.5,Miền nam,29,28.3,150
+Đại học XYZ,Khoa Nghệ thuật,17000000,0.5,Miền bắc,26.5,26,170
+Đại học HIJ,Khoa Y học,29000000,1,Miền trung,28.7,28.1,110
+Đại học PQR,Khoa Khoa học Xã hội,23000000,0.5,Miền bắc,25.8,25.2,190
+Đại học LMN,Khoa Khoa học Tự nhiên,27000000,1,Miền trung,27.3,26.9,120
+Đại học ABC,Khoa Luật,31000000,1,Miền bắc,29.5,28.7,130
+Đại học KLM,Khoa Kỹ thuật,21000000,1,Miền bắc,28.2,27.7,160
+Đại học OPQ,Khoa Kinh doanh,25000000,1,Miền bắc,29.8,28.6,140
+Đại học RST,Khoa Nghệ thuật,20000000,0.5,Miền bắc,26.7,26.3,170
+Đại học UVW,Khoa Y học,33000000,1,Miền trung,27.7,27.3,110
+Đại học HIJ,Khoa Khoa học Xã hội,22000000,0.5,Miền bắc,25.5,25.1,180
+Đại học XYZ,Khoa Khoa học Tự nhiên,26000000,1,Miền bắc,28.5,27.8,130
+Đại học PQR,Khoa Luật,28000000,1,Miền bắc,28.1,27.6,100
+Đại học LMN,Khoa Kỹ thuật,18000000,1,Miền trung,27.9,27.4,190
+Đại học KLM,Khoa Kinh doanh,24000000,1,Miền bắc,29.3,28.9,150
+Đại học OPQ,Khoa Nghệ thuật,17000000,0.5,Miền bắc,26.3,25.9,170
+Đại học RST,Khoa Y học,30000000,1,Miền bắc,27.1,26.6,120
+Đại học LMN,Khoa Kỹ thuật,19500000,1,Miền bắc,27.8,27.3,160
+Đại học GHI,Khoa Y học,28000000,1,Miền trung,29,28.5,140
+Đại học STU,Khoa Kinh doanh,23000000,0.5,Miền nam,26.7,26.2,190
+Đại học NOP,Khoa Khoa học Tự nhiên,31000000,1,Miền bắc,28.3,27.8,120
+Đại học QWE,Khoa Luật,27000000,1,Miền nam,27.1,26.6,200
+Đại học JKL,Khoa Nghệ thuật,20000000,1,Miền trung,28.6,28.1,150
+Đại học BCD,Khoa Kỹ thuật,24500000,1,Miền trung,27.2,26.7,130
+Đại học XYZ,Khoa Y học,32000000,1,Miền bắc,28.7,28.2,160
+Đại học PQR,Khoa Khoa học Xã hội,18500000,0.5,Miền nam,26.4,25.9,170
+Đại học MNO,Khoa Khoa học Tự nhiên,26500000,1,Miền trung,29.1,28.6,140
+Đại học EFG,Khoa Kinh doanh,22000000,1,Miền bắc,27.8,27.2,180
+Đại học UVW,Khoa Nghệ thuật,21000000,0.5,Miền bắc,25.9,25.4,160
+Đại học RST,Khoa Y học,29500000,1,Miền nam,28.5,28,130
+Đại học KLM,Khoa Khoa học Xã hội,22500000,0.5,Miền nam,26.2,25.7,140
+Đại học OPQ,Khoa Kỹ thuật,29000000,1,Miền trung,29,28.5,200
+Đại học HIJ,Khoa Kinh doanh,20500000,1,Miền trung,27.5,27,120
+Đại học BCD,Khoa Nghệ thuật,18000000,1,Miền trung,28,27.5,180   
+Đại học QWE,Khoa Y học,33000000,0.5,Miền nam,26.5,26,150
+Đại học JKL,Khoa Khoa học Xã hội,24000000,1,Miền bắc,28.9,28.4,170
+Đại học STU,Khoa Khoa học Tự nhiên,27000000,1,Miền bắc,27.4,26.9,110
+Đại học DEF,Khoa Kỹ thuật,22000000,0,Miền nam,24,23.5,180
+Đại học UVW,Khoa Kinh doanh,19000000,0,Miền trung,22.5,21.8,150
+Đại học GHI,Khoa Luật,23500000,0,Miền bắc,24.8,24,200
+Đại học BCD,Khoa Công nghệ,18000000,1,Miền trung,28,27.5,180   
+Đại học QWE,Khoa Công nghệ,33000000,0.5,Miền nam,26.5,26,150
+Đại học JKL,Khoa Công nghệ,24000000,1,Miền bắc,28.9,28.4,170
+Đại học STU,Khoa Công nghệ,27000000,1,Miền bắc,27.4,26.9,110
+Đại học DEF,Khoa Công nghệ,22000000,0,Miền nam,24,23.5,180
+Đại học UVW,Khoa Công nghệ,19000000,0,Miền trung,22.5,21.8,150
+Đại học GHI,Khoa Công nghệ,23500000,0,Miền bắc,24.8,24,200
