@@ -4,7 +4,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-df = pd.read_csv("./Book1_Quan.csv")
+df = pd.read_csv("./Data_NguyenVong.csv")
 
 def process_input(B1, B2, B3):
     dia_diem_dict = {'Miền bắc': 1, 'Miền trung': 2, 'Miền nam': 3}
@@ -59,7 +59,7 @@ def process_input_route():
         # Pass the required variables to the result route
         return redirect(url_for('result', result=result, B1=B1, B2=B2, B3=B3))
 
-
+ư
 @app.route('/result/<result>')
 def result(result):
     B1 = float(request.args.get('B1'))
