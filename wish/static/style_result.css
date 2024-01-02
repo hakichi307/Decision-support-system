@@ -1,15 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4beec;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-top: 60px;
   }
-  
   .container {
-    background-color: #fff;
+    background-color: #f5e0f1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,13 +22,13 @@ body {
     color: #333;
   }
   
-  #resultTable {
+  #resultTable, #resultTable2 {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
   }
   
-  #resultTable th, #resultTable td {
+  #resultTable th, #resultTable td ,#resultTable2 th,#resultTable2 td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -38,7 +38,10 @@ body {
     background-color: #2aade1;
     color: white;
   }
-  
+  #resultTable2 th{
+    background-color: #1bcf3cdc;
+    color: white;
+  }
   button {
     padding: 10px;
     background-color: #2791d3;

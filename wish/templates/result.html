@@ -10,9 +10,42 @@
 
 <body>
   <div class="container">
-    <h2>KẾT QUẢ LỰA CHỌN PHÙ HỢP</h2>
-
+    <h2>KẾT QUẢ TRƯỜNG ĐẠI HỌC TỐT NHẤT</h2>
     <table id="resultTable">
+      <tr>
+        <th>Tên Trường</th>
+        <th>Chuyên ngành</th>
+        <th>Học phí</th>
+        <th>Địa điểm</th>
+        <th>Điểm thi</th>
+        <th>Chỉ tiêu</th>
+        <th>Đánh Giá Trường</th>
+      </tr>
+      {% for item in result %}
+      <tr>
+        <td>{{item['Tên trường']}}</td>
+        <td>{{item['Chuyên ngành']}}</td>
+        <td>{{item['Học phí']}}</td>
+        <td>{{item['Địa điểm']}}</td>
+        <td>{{item['Điểm dự kiến']}}</td>
+        <td>{{item['Chỉ tiêu']}}</td>
+        <td>
+          {% if item['Đánh giá'] == 0.0 %}
+          Trung bình
+          {% elif item['Đánh giá'] == 0.5 %}
+          Tốt
+          {% elif item['Đánh giá'] == 1.0 %}
+          Rất tốt
+          {% else %}
+          {{ item['Đánh giá'] }}
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+      <!-- Data will be added dynamically here -->
+    </table>
+    <h2>KẾT QUẢ SỰ LỰA CHỌN PHÙ HỢP</h2>
+    <table id="resultTable2">
       <tr>
         <th>Tên Trường</th>
         <th>Chuyên ngành</th>
@@ -25,21 +58,25 @@
       {% for item in result %}
       <tr>
         <td>{{item['Tên trường']}}</td>
-        <td>{{item['Tên trường']}}</td>
-
-        <td>{{item['Học phí']}}</td>
-        <td>{{item['Địa điểm']}}</td>
-        <td>{{item['Điểm chuẩn năm trước']}}</td>
-        <td>{{item['Chỉ tiêu']}}</td>
+        <td>{{item['Chuyên ngành']}}</td>
+        <td>{{item['C1']}}</td>
+        <td>{{item['C3']}}</td>
+        <td>{{item['C4']}}</td>
+        <td>{{item['C5']}}</td>
         <td>{{item['Đánh giá']}}</td>
       </tr>
       {% endfor %}
       <!-- Data will be added dynamically here -->
     </table>
+    <h2>Lựa chọn phù hợp nhất là:</h2>
+    <p>Trường:<span id="resultTruong"></span> </p>
+    <p>Khoa: <span id="resultNganh"></span> </p>
+    <p>Điểm: <span id="resultDiem"></span> </p>
+    <p>Học phí: <span id="resultFee"></span> </p>
 
-    <p>Lựa chọn phù hợp nhất là trường:<span id="resultTruong"></span> </p>
+
     <!-- Hiển thị thông tin vừa nhập -->
-    <p>Thông tin vừa nhập:</p>
+    <h3>Thông tin vừa nhập:</h3>
     <p>Địa Chỉ: <span id="resultRegion"></span></p>
     <p>Điểm Thi: <span id="resultExamScore"></span></p>
     <p>Học Phí: <span id="resultTuition"></span></p>
@@ -53,6 +90,10 @@
 
     // Hiển thị thông tin trên trang result
     var result = "{{ result[0]['Tên trường'] }}";
+    var major = "{{ result[0]['Chuyên ngành'] }}";
+    var point = "{{ result[0]['Điểm chuẩn năm trước'] }}";
+    var fee = "{{ result[0]['Học phí'] }}";
+
     var region = "{{ B3 }}";
     if (region == '1') {
       region = 'Miền bắc'
@@ -66,6 +107,9 @@
     var examScore = "{{ B2 }}";
     var tuition = "{{ B1 }}";
     document.getElementById('resultTruong').innerText = result;
+    document.getElementById('resultNganh').innerText = major;
+    document.getElementById('resultDiem').innerText = point;
+    document.getElementById('resultFee').innerText = fee;
     document.getElementById('resultRegion').innerText = region;
     document.getElementById('resultExamScore').innerText = examScore;
     document.getElementById('resultTuition').innerText = tuition;

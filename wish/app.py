@@ -9,7 +9,7 @@ df = pd.read_csv("./Data_NguyenVong.csv")
 from sklearn import preprocessing
 Chitieu = df['Chỉ tiêu'].values.reshape(-1, 1) #returns a numpy array
 min_max_scaler = preprocessing.MinMaxScaler()
-df['Chỉ tiêu'] = min_max_scaler.fit_transform(Chitieu)
+df['Chỉ tiêu Scaler'] = min_max_scaler.fit_transform(Chitieu)
 
 def process_input(B1, B2, B3):
     dia_diem_dict = {"Miền bắc": 1, "Miền trung": 2, "Miền nam": 3}
@@ -21,7 +21,7 @@ def process_input(B1, B2, B3):
         A3 = dia_diem_dict[df["Địa điểm"][i]]
         A4 = df["Điểm dự kiến"][i]
         A5 = df["Điểm chuẩn năm trước"][i]
-        A6 = df["Chỉ tiêu"][i]
+        A6 = df["Chỉ tiêu Scaler"][i]
 
         # Sự phù hợp về học phí
         if B1 >= 2 * A1:
@@ -119,15 +119,6 @@ def result(result):
     B1 = float(request.args.get("B1"))  # type: ignore
     B2 = float(request.args.get("B2"))  # type: ignore
     B3 = int(request.args.get("B3"))  # type: ignore
-    # df = pd.read_csv("./Data_NguyenVong.csv")
-    # k = df.iloc[int(result)]
-    # result = {
-    #     "school_name": k["Tên trường"],
-    #     "tuition_fit": k["Học phí"],
-    #     "location_fit": k["Địa điểm"],
-    #     "quota_fit": k["Chỉ tiêu"],
-    #     "school_rating": k["Đánh giá"],
-    # }
     import json
     result = json.loads(result)
     print("result", result)
