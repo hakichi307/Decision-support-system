@@ -19,8 +19,15 @@
                 <option value="2">Miền Trung</option>
                 <option value="3">Miền Nam</option>
             </select>
+            
             <label for="academicMajor">Ngành học:</label>
-            <input type="text" id="academicMajor" name="academicMajor" required>
+            <select name="academicMajor" id="academicMajor">
+                {% for c in cn %}
+                <option value="{{c}}">{{c}}</option>
+                {% endfor %}
+            </select>
+            <!-- <input type="text" id="academicMajor" name="academicMajor" required> -->
+            
             <label for="examScore">Điểm Thi Đại Học:</label>
             <input type="number" id="examScore" name="examScore" required>
             <label for="tuition">Mức Học Phí Phù Hợp:</label>

@@ -27,7 +27,9 @@ body {
     border-collapse: collapse;
     margin-top: 20px;
   }
-  
+  #resultTable th, #resultTable2 th {
+    width: 120px;
+  }
   #resultTable th, #resultTable td ,#resultTable2 th,#resultTable2 td {
     border: 1px solid #ddd;
     padding: 8px;
