@@ -107,7 +107,7 @@ def process_input_route():
         B1 = float(request.form["tuition"])
         B2 = float(request.form["examScore"])
         B3 = int(request.form["region"])
-
+        
         result = process_input(B1, B2, B3)
 
         # Pass the required variables to the result route
